@@ -94,10 +94,10 @@ class URLEncoder
             return "+";
         }
         $ord = ord($char);
-        if (($ord >= ord('0') && $ord <= ord('9'))
-            || ($ord >= ord('A') && $ord <= ord('Z'))
-            || ($ord >= ord('a') && $ord <= ord('z'))
-            || (in_array($char, ['-', '.', '_', '*']))) {
+        if (($ord >= 48 && $ord <= 57)
+            || ($ord >= 65 && $ord <= 90)
+            || ($ord >= 97 && $ord <= 122)
+            || (in_array($ord, [45, 46, 95, 42]))) {
             return $char;
         }
         return '%' . strtoupper(dechex($ord));
