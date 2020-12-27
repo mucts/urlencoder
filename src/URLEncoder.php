@@ -100,6 +100,6 @@ class URLEncoder
             || (in_array($ord, [45, 46, 95, 42]))) {
             return $char;
         }
-        return '%' . strtoupper(dechex($ord));
+        return '%' . strtoupper(str_pad(dechex($ord), 2, '0', STR_PAD_LEFT));
     }
 }

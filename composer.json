@@ -15,6 +15,11 @@
             "MuCTS\\URLEncoder\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "MuCTS\\URLEncoder\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Herry",
