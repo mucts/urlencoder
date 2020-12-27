@@ -40,7 +40,7 @@
 -._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
 ```
 
-### AVA-URLEncode标准
+### JAVA-URLEncode标准
 
 > 主要区别是 * 号的处理，PHP的编码为%2A，JAVA则保持 * 号不变。
 
